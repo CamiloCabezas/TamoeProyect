@@ -1,0 +1,33 @@
+﻿.container_cartas {
+    display :grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: black;
+    margin: 5px 0 5px 0 ;
+    
+}
+
+.card{
+    
+    background-color: black;
+    
+}
+
+.card_content {
+    margin: 8px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: white;
+    border: 2px solid;
+    border-top-color: #68fa08;
+    border-right-color: black;
+    border-bottom-color: #68fa08;
+    border-left-color: black;
+}

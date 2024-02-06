@@ -1,0 +1,31 @@
+﻿.container-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+    .container-nav div {
+        flex-grow: 1;
+        border: 2px solid white;
+        padding: 5px;
+        text-align: center;
+        background-color: black;
+        transition: background-color 0.3s ease; /* Agrega una transición suave de color */
+    }
+
+        .container-nav div:hover {
+            background-color: white; /* Cambia el color al pasar el mouse */
+        }
+
+        .container-nav div a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease; /* Agrega una transición suave de color */
+            font-family: 'Bebas Neue', sans-serif;
+            font-size:30px; 
+        }
+
+        .container-nav div:hover a {
+            color: darkgreen; /* Cambia el color del texto al pasar el mouse */
+        }

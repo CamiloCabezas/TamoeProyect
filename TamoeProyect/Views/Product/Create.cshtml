@@ -1,0 +1,33 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+
+<form asp-action="Create">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control" type="number" />
+    </div>
+    <button class="btn btn-primary"  >Send!</button>
+    <a asp-action="Index" class="btn btn-danger">Cancel</a>
+</form>
+
+
+
+
+@section Scripts{
+    <partial name = "_ValidationScriptspartial" />
+}

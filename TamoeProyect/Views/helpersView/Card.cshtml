@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ProductViewModel>
+
+
+<div class="container_cartas">
+    @foreach(var product in Model)
+    {
+        <div class="container">
+            <div class="card">
+                <img src="~/imagenes/TamoeEjemplo.jpg" alt="Producto">
+                <div class="card_content">
+                    <h2 class="card-title">@product.Name</h2>
+                    <p class="card-description">@product.Description</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+

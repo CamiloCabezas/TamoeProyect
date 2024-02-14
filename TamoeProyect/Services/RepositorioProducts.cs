@@ -18,7 +18,7 @@ namespace TamoeProyect.Services
         }
        public async Task PostProduct(ProductViewModel modelo)
        {
-           Console.WriteLine("Hola");
+           
            using var connection = new SqlConnection(connectionString);
 
            var id = await connection.QuerySingleAsync<int>(@"INSERT INTO Products(Name, Description, Price)

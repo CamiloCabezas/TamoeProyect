@@ -29,7 +29,6 @@ namespace TamoeProyect.Controllers
         {
             if (!ModelState.IsValid)
             {
-                Console.WriteLine("Esta malo");
                 return View(modelo);
             }
 
